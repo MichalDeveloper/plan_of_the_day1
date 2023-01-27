@@ -19,45 +19,45 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: TextTheme(
-          headline1: GoogleFonts.ubuntu(
+          displayLarge: GoogleFonts.ubuntu(
             fontSize: 25,
             fontWeight: FontWeight.w400,
             color: Colors.black,
           ),
-          headline2: GoogleFonts.ubuntu(
+          displayMedium: GoogleFonts.ubuntu(
             fontSize: 22,
             fontWeight: FontWeight.w500,
             color: Colors.black,
           ),
-          headline3: GoogleFonts.ubuntu(
+          displaySmall: GoogleFonts.ubuntu(
             fontSize: 15,
             fontWeight: FontWeight.w400,
             color: Colors.grey,
           ),
-          headline4: GoogleFonts.ubuntu(
+          headlineMedium: GoogleFonts.ubuntu(
             fontSize: 18,
             fontWeight: FontWeight.w500,
             color: Colors.black,
           ),
-          headline5: GoogleFonts.ubuntu(
+          headlineSmall: GoogleFonts.ubuntu(
             fontSize: 18,
             fontWeight: FontWeight.w500,
             color: Colors.deepPurpleAccent,
           ),
-          subtitle1: GoogleFonts.ubuntu(
+          titleMedium: GoogleFonts.ubuntu(
             fontSize: 15,
             fontWeight: FontWeight.w500,
             color: Colors.deepPurpleAccent,
           ),
         ),
       ),
-      home: FinalView(),
+      home: const flutterOTPVerificationScreen(),
     );
   }
 }
 
-class FinalView extends StatelessWidget {
-  FinalView({Key? key}) : super(key: key);
+class flutterOTPVerificationScreen extends StatelessWidget {
+  const flutterOTPVerificationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +115,7 @@ class BottomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
               side: const BorderSide(color: Colors.deepPurpleAccent, width: 2)),
-          child: Text("Resend", style: textTheme.subtitle1),
+          child: Text("Resend", style: textTheme.titleMedium),
         ),
         MaterialButton(
           onPressed: () {},
@@ -126,7 +126,7 @@ class BottomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: Text("Confirm",
-              style: textTheme.subtitle1?.copyWith(color: Colors.white)),
+              style: textTheme.titleMedium?.copyWith(color: Colors.white)),
         ),
       ]),
     );
@@ -145,11 +145,11 @@ class ResendCode extends StatelessWidget {
     return RichText(
       text: TextSpan(
           text: "Resend code after ",
-          style: textTheme.headline3,
+          style: textTheme.displaySmall,
           children: [
             TextSpan(
                 text: "1:20",
-                style: textTheme.headline5?.copyWith(fontSize: 16))
+                style: textTheme.headlineSmall?.copyWith(fontSize: 16))
           ]),
     );
   }
@@ -204,7 +204,7 @@ class Otp extends StatelessWidget {
               textAlign: TextAlign.center,
               cursorHeight: 30.0,
               maxLines: 1,
-              style: textTheme.headline1,
+              style: textTheme.displayLarge,
               keyboardType: TextInputType.number,
               inputFormatters: [
                 LengthLimitingTextInputFormatter(1),
@@ -226,7 +226,7 @@ class Otp extends StatelessWidget {
               textAlign: TextAlign.center,
               cursorHeight: 30.0,
               maxLines: 1,
-              style: textTheme.headline1,
+              style: textTheme.displayLarge,
               keyboardType: TextInputType.number,
               inputFormatters: [
                 LengthLimitingTextInputFormatter(1),
@@ -248,7 +248,7 @@ class Otp extends StatelessWidget {
               textAlign: TextAlign.center,
               cursorHeight: 30.0,
               maxLines: 1,
-              style: textTheme.headline1,
+              style: textTheme.displayLarge,
               keyboardType: TextInputType.number,
               inputFormatters: [
                 LengthLimitingTextInputFormatter(1),
@@ -270,7 +270,7 @@ class Otp extends StatelessWidget {
               textAlign: TextAlign.center,
               cursorHeight: 30.0,
               maxLines: 1,
-              style: textTheme.headline1,
+              style: textTheme.displayLarge,
               keyboardType: TextInputType.number,
               inputFormatters: [
                 LengthLimitingTextInputFormatter(1),
@@ -300,22 +300,22 @@ class TopTexts extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Verification code", style: textTheme.headline2),
+          Text("Verification code", style: textTheme.displayMedium),
           const SizedBox(
             height: 2,
           ),
           Text("We have sent the verification code to",
-              style: textTheme.headline3),
+              style: textTheme.displaySmall),
           const SizedBox(
             height: 5,
           ),
           RichText(
             text: TextSpan(
                 text: "+98********56  ",
-                style: textTheme.headline4,
+                style: textTheme.headlineMedium,
                 children: [
                   TextSpan(
-                      text: "Change Phone number?", style: textTheme.headline5)
+                      text: "Change Phone number?", style: textTheme.headlineSmall)
                 ]),
           ),
         ],
