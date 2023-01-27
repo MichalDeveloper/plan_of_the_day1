@@ -1,28 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: FinalView(),
-    );
-  }
-}
-
-class FinalView extends StatefulWidget {
-  const FinalView({super.key});
+class CountdownTimer extends StatefulWidget {
+  const CountdownTimer({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _FinalViewState createState() => _FinalViewState();
+  _CountdownTimerState createState() => _CountdownTimerState();
 }
 
-class _FinalViewState extends State<FinalView> with TickerProviderStateMixin {
+class _CountdownTimerState extends State<CountdownTimer> with TickerProviderStateMixin {
   late AnimationController controller;
 
   String get timerString {
