@@ -1,33 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+
+class CustomTabBar extends StatefulWidget {
+  const CustomTabBar({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
-      home: const FinalView(),
-    );
-  }
+  State<CustomTabBar> createState() =>  _CustomTabBarState();
 }
-
-class FinalView extends StatefulWidget {
-  const FinalView({Key? key}) : super(key: key);
-
-  @override
-  State<FinalView> createState() => _FinalViewState();
-}
-
-class _FinalViewState extends State<FinalView> {
+class _CustomTabBarState extends State<CustomTabBar> {
   DateTimeRange? selectedDateRange;
 
   void _show() async {
