@@ -1,5 +1,5 @@
-
-![193295449-8b7c6066-f10a-4fb0-9fb2-bc100b1a8722](https://user-images.githubusercontent.com/116844249/215130781-3fbcf5b9-02a4-493f-8ecb-2db77422664d.png)SQLite CRUD Example 🔥
+SQLite CRUD Example 🔥
+![193295449-8b7c6066-f10a-4fb0-9fb2-bc100b1a8722](https://user-images.githubusercontent.com/116844249/215130781-3fbcf5b9-02a4-493f-8ecb-2db77422664d.png)
  
 ![190915199-f6eb2ef4-fc96-4d1d-9110-1e03b0b54378](https://user-images.githubusercontent.com/116844249/215130788-7f1fd1bf-c501-449e-be9c-af01ab2d72dc.png)Verification Screen🔥
 
