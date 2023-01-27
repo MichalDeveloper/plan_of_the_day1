@@ -14,20 +14,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FinalView(),
+      home: const passwordStrenghtChecker(),
     );
   }
 }
 
 
-class FinalView extends StatefulWidget {
-  const FinalView({Key? key}) : super(key: key);
+class passwordStrenghtChecker extends StatefulWidget {
+  const passwordStrenghtChecker({Key? key}) : super(key: key);
 
   @override
-  State<FinalView> createState() => _FinalViewState();
+  State<passwordStrenghtChecker> createState() => _passwordStrenghtChecker();
 }
 
-class _FinalViewState extends State<FinalView> {
+class _passwordStrenghtChecker extends State<passwordStrenghtChecker> {
   late String password;
   bool isObscure = false;
   double strength = 0;
