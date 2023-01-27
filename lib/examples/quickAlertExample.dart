@@ -11,19 +11,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const FinalView(),
+      home: const quickAlertExample(),
     );
   }
 }
 
-class FinalView extends StatefulWidget {
-  const FinalView({super.key});
+class quickAlertExample extends StatefulWidget {
+  const quickAlertExample({super.key});
 
   @override
-  State<FinalView> createState() => _FinalViewState();
+  State<quickAlertExample> createState() => _quickAlertExample();
 }
 
-class _FinalViewState extends State<FinalView> {
+class _quickAlertExample extends State<quickAlertExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
