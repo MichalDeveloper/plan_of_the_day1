@@ -13,20 +13,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.green),
-      home: const FinalView(),
+      home: const highlightSelectedItemsInAListView(),
     );
   }
 }
 
-class FinalView extends StatefulWidget {
-  const FinalView({Key? key}) : super(key: key);
+class highlightSelectedItemsInAListView extends StatefulWidget {
+  const highlightSelectedItemsInAListView({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _FinalViewState createState() => _FinalViewState();
+  _highlightSelectedItemsInAListView createState() => _highlightSelectedItemsInAListView();
 }
 
-class _FinalViewState extends State<FinalView> {
+class _highlightSelectedItemsInAListView extends State<highlightSelectedItemsInAListView> {
   List<Map> data = List.generate(
     31,
     (index) => {'id': index, 'name': 'Item $index', 'isSelected': false},
