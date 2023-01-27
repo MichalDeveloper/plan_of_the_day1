@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.indigo),
-      home: const FinalView(),
+      home: const flutterAccordions(),
     );
   }
 }
 
-class FinalView extends StatelessWidget {
-  const FinalView({Key? key}) : super(key: key);
+class flutterAccordions extends StatelessWidget {
+  const flutterAccordions({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
